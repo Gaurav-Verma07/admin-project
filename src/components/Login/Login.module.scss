@@ -1,7 +1,7 @@
 .main {
   width: 100%;
   height: 100vh;
-  background-image: url("../../../public/assets/publishHeroBox.jpeg");
+  background-image: url('../../../public/assets/publishHeroBox.jpeg');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -9,24 +9,30 @@
   align-items: center;
   &__form {
     width: 60rem;
-    height: 35rem;
+    // height: 35rem;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 1rem;
-    padding-top: 5rem;
+    padding: 5rem 0;
     font-size: 1.7rem;
     font-weight: 500;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    
+
+
+    &_heading {
+      text-transform: uppercase;
+      padding: 3rem 0;
+    }
+
     &_input {
       font-size: 2rem;
-      width: 25rem;
+      min-width: 25rem;
       border: none;
       border-radius: 2rem;
       text-align: center;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.8);
       color: #fff;
       padding: 1rem 1rem;
       border-bottom: 2px solid transparent;
@@ -36,17 +42,17 @@
         border-bottom: 2px solid #63fc30;
       }
       &::placeholder {
-        color: #fff;
+        color: rgba(255, 255, 255, 0.7);
       }
     }
     &_login {
       font-size: 2rem;
       padding: 1rem 5rem;
-      margin-bottom:2rem;
+      margin-bottom: 2rem;
       background-color: #000;
       border: none;
       box-shadow: 3px 7px 9px rgba(0, 0, 0, 0.3);
-      border-radius:3px 3rem;
+      border-radius: 3rem;
       color: #fff;
       cursor: pointer;
       transition: all 0.2s;
@@ -54,13 +60,28 @@
         transform: translateY(-2px);
       }
     }
-    &_signUp {
-      font-size: 2rem;
-      color: blue;
-      border: none;
-      background-color: transparent;
-      text-decoration: underline;
-      cursor: pointer;
+    &_buttons {
+      &_signUp {
+        padding:0 2rem;
+        font-size: 1.5rem;
+        color: blue;
+        border: none;
+        background-color: transparent;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    
+    &_error{
+      color:red;
+    }
+
+    &_inputError{
+      border:2px solid red;
+      &:active,
+      &:focus {
+        border-bottom: 2px solid red;
+      }
     }
   }
 }

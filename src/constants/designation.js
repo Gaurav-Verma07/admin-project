@@ -15,4 +15,4 @@ export const designation = [
   'Network Administor',
 ];
 
-export const empFields = ['Employee Code', 'Name', 'Age', 'Designation', 'Salary', 'Joining Date'];
+export const empFields = ['Employee Code', 'Name', 'Age', 'Designation', 'Annual salary', 'Joining Date'];

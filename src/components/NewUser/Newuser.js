@@ -136,7 +136,7 @@ const NewUser = () => {
           onBlur={formik.handleBlur}
         />
         <label className={classes.main__form_label} for="salary">
-          Salary
+          Salary(Annual)
         </label>
         <input
           className={classes.main__form_input}
