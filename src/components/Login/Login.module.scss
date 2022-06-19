@@ -1,0 +1,53 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../public/assets/publishHeroBox.jpeg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__form {
+    width: 60rem;
+    height: 35rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1rem;
+    padding-top: 5rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    & > * {
+      margin: 1rem 20%;
+    }
+    &_label {
+    }
+    &_input {
+      font-size: 1.4rem;
+      width: 25rem;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.3);
+      color: #fff;
+      padding: 1rem 1rem;
+      border-bottom: 2px solid transparent;
+      outline:none;
+      &:active, &:focus{
+        border-bottom:2px solid #63fc30;
+      }
+    }
+    &_login{
+        padding:1rem 5rem;
+        font-size: 2rem;
+        background-color:#000;
+        border:none;
+        box-shadow: 3px 7px 9px  rgba(0, 0, 0, 0.3);
+        color:#fff;
+        cursor:pointer;
+        transition: all .2s;
+        &:hover{
+            transform: translateY(-2px);
+        }
+    }
+    &_signUp{
+        font-size: 1.5rem;
+    }
+  }
+}
