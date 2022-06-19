@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const AdminContext = React.createContext({
-inLoggedIn:false
+  inLoggedIn: false,
+  data: [],
+  newuser: () => {},
 });
 
 export default AdminContext;

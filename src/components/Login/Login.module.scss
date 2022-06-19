@@ -15,39 +15,52 @@
     padding-top: 5rem;
     font-size: 1.7rem;
     font-weight: 500;
-    & > * {
-      margin: 1rem 20%;
-    }
-    &_label {
-    }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
     &_input {
-      font-size: 1.4rem;
+      font-size: 2rem;
       width: 25rem;
       border: none;
+      border-radius: 2rem;
+      text-align: center;
       background-color: rgba(0, 0, 0, 0.3);
       color: #fff;
       padding: 1rem 1rem;
       border-bottom: 2px solid transparent;
-      outline:none;
-      &:active, &:focus{
-        border-bottom:2px solid #63fc30;
+      outline: none;
+      &:active,
+      &:focus {
+        border-bottom: 2px solid #63fc30;
+      }
+      &::placeholder {
+        color: #fff;
       }
     }
-    &_login{
-        padding:1rem 5rem;
-        font-size: 2rem;
-        background-color:#000;
-        border:none;
-        box-shadow: 3px 7px 9px  rgba(0, 0, 0, 0.3);
-        color:#fff;
-        cursor:pointer;
-        transition: all .2s;
-        &:hover{
-            transform: translateY(-2px);
-        }
+    &_login {
+      font-size: 2rem;
+      padding: 1rem 5rem;
+      margin-bottom:2rem;
+      background-color: #000;
+      border: none;
+      box-shadow: 3px 7px 9px rgba(0, 0, 0, 0.3);
+      border-radius:3px 3rem;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.2s;
+      &:hover {
+        transform: translateY(-2px);
+      }
     }
-    &_signUp{
-        font-size: 1.5rem;
+    &_signUp {
+      font-size: 2rem;
+      color: blue;
+      border: none;
+      background-color: transparent;
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 }
