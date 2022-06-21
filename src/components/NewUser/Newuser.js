@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { useNavigate } from 'react-router-dom';
 import { designation } from '../../constants/designation';
-import { nextID } from '../../utils/nextId';
+import { getDate, nextID } from '../../utils/nextId';
 import { useContext, useEffect } from 'react';
 import AdminContext from '../../store/admin-context';
 
@@ -29,6 +29,7 @@ const NewUser = () => {
     }),
     onSubmit: () => {},
   });
+
   const getNewID = async () => {
     const data = await adminCtx.data;
     const newID = nextID(data);
@@ -37,7 +38,7 @@ const NewUser = () => {
   useEffect(() => {
     getNewID();
   }, []);
-
+  console.log(formik.values);
   const submitHandler = (e) => {
     e.preventDefault();
     fetch('https://admin-2da31-default-rtdb.firebaseio.com/dashboard.json', {
@@ -47,11 +48,11 @@ const NewUser = () => {
         name: formik.values.name,
         age: formik.values.age,
         designation: formik.values.designation,
-        joinData: formik.values.joinDate,
+        joinData: getDate(formik.values.joinDate),
         salary: formik.values.salary,
       }),
       headers: {
-        'Content-type': 'application/json',
+        'Content-type': 'application/json', 
       },
     }).then((res) => {
       console.log(res);
@@ -78,7 +79,7 @@ const NewUser = () => {
           type="text"
           id="empCode"
           disabled
-        style= {{cursor:'not-allowed'}}
+          style={{ cursor: 'not-allowed' }}
           value={formik.values.empCode}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}

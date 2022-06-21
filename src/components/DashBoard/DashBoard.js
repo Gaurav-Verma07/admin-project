@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import { empFields } from '../../constants/designation';
 import AdminContext from '../../store/admin-context';
 import { sortHelper } from '../../utils/sortHelper';
+import DashBoardCharts from '../DashBoardCharts.js/DashBoardCharts';
 import classes from './DashBoard.module.scss';
 
 const DashBoard = () => {
@@ -9,7 +10,6 @@ const DashBoard = () => {
   const [data, setData] = useState();
   const [sortOrder, setSortOrder] = useState(true);
   const [sortBy, setSortBy] = useState();
-
   useEffect(() => {
     const getData = async () => {
       const data = await adminCtx.data;
@@ -23,10 +23,10 @@ const DashBoard = () => {
     const sortedData = sortHelper(sortBy, sortOrder, data);
     setData(sortedData);
   }, [sortOrder, sortBy]);
-  console.log('new data', data);
 
   return (
     <main className={classes.main}>
+      <DashBoardCharts data={data} />
       <div className={classes.main__field}>
         <p className={classes.main__field_head}>Employee's Data</p>
         <div className={classes.main__field_option}>

@@ -46,7 +46,7 @@ const Login = () => {
           navigate('/new-user');
         } else {
           return res.json().then((data) => {
-            alert(data.error.message)
+            alert(data.error.message);
           });
         }
       });
@@ -80,7 +80,12 @@ const Login = () => {
 
   return (
     <main className={classes.main}>
-      <form className={classes.main__form} onSubmit={(e) => formSubmitHandler(e)}>
+      <form
+        className={classes.main__form}
+        onSubmit={(e) => {
+          formSubmitHandler(e);
+        }}
+      >
         <h1 className={classes.main__form_heading}>{isNewUser ? 'SignUp' : 'Login'}</h1>
         <input
           className={clsx(
