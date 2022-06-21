@@ -1,5 +1,5 @@
 {
-  "homepage": "http://lucky-web-dev.github.io/Admin",
+  "homepage": "http://lucky-web-dev.github.io/admin-project",
   "name": "admin-project",
   "version": "0.1.0",
   "private": true,
@@ -46,5 +46,11 @@
     "gh-pages": "^4.0.0",
     "react-router-dom": "^6.3.0",
     "sass": "^1.52.3"
+  },
+  "engines": {
+    "npm": ">=8.7.0"
+  },
+  "overrides": {
+    "react": "$react"
   }
 }
