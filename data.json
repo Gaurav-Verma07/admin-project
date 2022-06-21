@@ -1,0 +1,37 @@
+{
+    "0":{
+        "empCode":"APT-182",
+        "name":"Gaurav Verma",
+        "age":"19",
+        "designation":"Front End Developer",
+        "joiningDate":"15/03/22"
+    },
+    "1":{
+        "empCode":"APT-183",
+        "name":"Satvik",
+        "age":"23",
+        "designation":"SDE-1",
+        "joiningDate":"12/12/22"
+    },
+    "2":{
+        "empCode":"APT-184",
+        "name":"Elon Ma",
+        "age":"49",
+        "designation":"CEO",
+        "joiningDate":"15/01/03"
+    },
+    "3":{
+        "empCode":"APT-185",
+        "name":"Santa Claus",
+        "age":"102",
+        "designation":"SDE-2",
+        "joiningDate":"12/02/89"
+    },
+    "4":{
+        "empCode":"APT-182",
+        "name":"Gaurav Verma",
+        "age":"19",
+        "designation":"Front End Developer",
+        "joiningDate":"15/03/22"
+    },
+}

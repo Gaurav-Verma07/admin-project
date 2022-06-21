@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/admin-project/static/css/main.31fbd78f.css",
+    "main.js": "/admin-project/static/js/main.f82f3cad.js",
+    "static/js/787.6755ba15.chunk.js": "/admin-project/static/js/787.6755ba15.chunk.js",
+    "static/media/publishHeroBox.jpeg": "/admin-project/static/media/publishHeroBox.8fe0d7b5bde933d29a30.jpeg",
+    "index.html": "/admin-project/index.html",
+    "main.31fbd78f.css.map": "/admin-project/static/css/main.31fbd78f.css.map",
+    "main.f82f3cad.js.map": "/admin-project/static/js/main.f82f3cad.js.map",
+    "787.6755ba15.chunk.js.map": "/admin-project/static/js/787.6755ba15.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31fbd78f.css",
+    "static/js/main.f82f3cad.js"
+  ]
+}
